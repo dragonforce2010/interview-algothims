@@ -24,7 +24,8 @@ class Solution:
                 start = mid
             else:
                 end = mid
-                
+
+        # 注意这里是取最小值        
         return min(nums[start], nums[end])
                 
 '''Summary
