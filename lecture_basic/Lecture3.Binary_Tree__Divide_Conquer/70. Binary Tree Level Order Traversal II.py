@@ -19,3 +19,27 @@ return its bottom-up level order traversal as:
   [3]
 ]
 '''
+<<<<<<< HEAD
+=======
+from collections import deque
+class Solution:
+    def levelOrderButtom(self, root):
+        if root is None:
+            return []
+
+        result, queue = [], deque([root])
+
+        while queue:
+            size = len(queue)
+            levelRes = []
+            for i in range(size):
+                node = queue.popleft()
+                levelRes.append(node.val)
+                if node.left:
+                    queue.append(node.left)
+                if node.right:
+                    queue.append(node.right)
+            result.append(levelRes)
+
+        return list(reversed(result))
+>>>>>>> 8257a656f5eb6e14c98abd41825b9e54c90cc181
