@@ -28,7 +28,7 @@ class MyQueue:
     def push(self, element):
         self.stack1.append(element)
 
-    def pop(self, element):
+    def top(self, element):
         self.adjust()
         return self.stack2[-1]
 
