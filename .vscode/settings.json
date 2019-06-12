@@ -1,5 +1,5 @@
 {
-    "python.pythonPath": "/Users/michaelz/anaconda3/bin/python",
+    "python.pythonPath": "/usr/local/bin/python3",
     "python.unitTest.unittestArgs": [
         "-v",
         "-s",
